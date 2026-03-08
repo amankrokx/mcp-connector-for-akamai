@@ -1,6 +1,8 @@
-# mcp-akamai
+# mcp-connector-for-akamai
 
-MCP (Model Context Protocol) server for Akamai APIs. Provides tools for edge diagnostics, debugging, and network analysis directly from AI assistants.
+> **Disclaimer:** This is an independent, unofficial, community-driven project. It is **not** affiliated with, endorsed by, sponsored by, or in any way officially connected to Akamai Technologies, Inc. The name "Akamai" and any related trademarks, service marks, or logos are the property of their respective owners and are used here solely for descriptive purposes to indicate compatibility. Use of these names does not imply any affiliation or endorsement. This software is provided "as is", without warranty of any kind. The authors assume no liability for any damages arising from the use of this software.
+
+An unofficial MCP (Model Context Protocol) server that connects AI assistants to Akamai APIs. Provides tools for edge diagnostics, debugging, and network analysis.
 
 ## Tools
 
@@ -60,10 +62,10 @@ Add to your `.vscode/mcp.json`:
     { "id": "akamai-host", "type": "promptString", "description": "Akamai API hostname (e.g. akab-xxx.luna.akamaiapis.net)" }
   ],
   "servers": {
-    "mcp-akamai": {
+    "mcp-connector-for-akamai": {
       "type": "stdio",
       "command": "node",
-      "args": ["<path-to>/mcp-akamai/build/index.js"],
+      "args": ["<path-to>/mcp-connector-for-akamai/build/index.js"],
       "env": {
         "AKAMAI_CLIENT_SECRET": "${input:akamai-client-secret}",
         "AKAMAI_CLIENT_TOKEN": "${input:akamai-client-token}",
@@ -82,9 +84,9 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "mcp-akamai": {
+    "mcp-connector-for-akamai": {
       "command": "node",
-      "args": ["<path-to>/mcp-akamai/build/index.js"],
+      "args": ["<path-to>/mcp-connector-for-akamai/build/index.js"],
       "env": {
         "AKAMAI_CLIENT_SECRET": "...",
         "AKAMAI_CLIENT_TOKEN": "...",

@@ -5,7 +5,7 @@ import { initAkamaiClient } from './akamai/client.js'
 import { registerAllTools } from './tools/index.js'
 
 const server = new McpServer({
-    name: 'mcp-akamai',
+    name: 'mcp-connector-for-akamai',
     version: '0.1.0'
 })
 
@@ -33,7 +33,7 @@ registerAllTools(server)
 async function main() {
     const transport = new StdioServerTransport()
     await server.connect(transport)
-    console.error('mcp-akamai server running on stdio')
+    console.error('mcp-connector-for-akamai server running on stdio')
 }
 
 main().catch((error) => {

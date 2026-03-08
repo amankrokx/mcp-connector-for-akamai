@@ -1,9 +1,19 @@
 {
-  "name": "mcp-akamai",
+  "name": "mcp-connector-for-akamai",
   "version": "0.1.0",
+  "description": "An unofficial MCP (Model Context Protocol) server that connects AI assistants to Akamai APIs for edge diagnostics, debugging, and network analysis.",
+  "license": "MIT",
   "type": "module",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "akamai",
+    "edge-diagnostics",
+    "cdn",
+    "ai"
+  ],
   "bin": {
-    "mcp-akamai": "./build/index.js"
+    "mcp-connector-for-akamai": "./build/index.js"
   },
   "scripts": {
     "build": "tsc",

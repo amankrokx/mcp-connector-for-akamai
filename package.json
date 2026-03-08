@@ -1,0 +1,22 @@
+{
+  "name": "mcp-akamai",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "mcp-akamai": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node build/index.js"
+  },
+  "files": ["build"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}

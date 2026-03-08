@@ -64,8 +64,8 @@ Add to your `.vscode/mcp.json`:
   "servers": {
     "mcp-connector-for-akamai": {
       "type": "stdio",
-      "command": "node",
-      "args": ["<path-to>/mcp-connector-for-akamai/build/index.js"],
+      "command": "npx",
+      "args": ["-y", "mcp-connector-for-akamai"],
       "env": {
         "AKAMAI_CLIENT_SECRET": "${input:akamai-client-secret}",
         "AKAMAI_CLIENT_TOKEN": "${input:akamai-client-token}",
@@ -85,8 +85,8 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "mcp-connector-for-akamai": {
-      "command": "node",
-      "args": ["<path-to>/mcp-connector-for-akamai/build/index.js"],
+      "command": "npx",
+      "args": ["-y", "mcp-connector-for-akamai"],
       "env": {
         "AKAMAI_CLIENT_SECRET": "...",
         "AKAMAI_CLIENT_TOKEN": "...",

@@ -4,6 +4,8 @@
 
 An unofficial MCP (Model Context Protocol) server that connects AI assistants to Akamai APIs. Provides tools for edge diagnostics, debugging, and network analysis.
 
+Link to NPM: [https://npmjs.com/package/mcp-connector-for-akamai](https://npmjs.com/package/mcp-connector-for-akamai)
+
 ## Tools
 
 ### Edge Diagnostics
